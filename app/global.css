@@ -1,0 +1,64 @@
+@import "@/public/vendor/marketplace/assets/css/bootstrap.css";
+
+
+a{
+    text-decoration: none;
+}
+
+.slick-loader {
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.accordion-button{
+  @apply !bg-white !text-gray-800;
+}
+
+.alert {
+	background: #F3FFF6;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 24px;
+}
+.alert-sucess:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	background: #6DCC76;
+	border-radius: 6px;
+	width: 7px;
+	height: 100%;
+}
+.alert-success {
+	color: #6DCC76;
+	font-weight: 500;
+	padding-left: 17px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.modal-dialog .modal-header{
+	@apply py-2.5;
+}
+
+.modal-dialog .modal-title{
+	@apply text-xl;
+}
+
+.modal-dialog .modal-content .modal-footer{
+	@apply py-2;
+}
